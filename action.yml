@@ -23,9 +23,9 @@ branding:
 runs:
   using: "composite"
   steps:
-    - id: Install Serverless-Devs
+    - name: Install Serverless-Devs
       run: npm install -g @serverless-devs/s
       shell: bash
-    - id: Configure Serverless-Devs
+    - name: Configure Serverless-Devs
       run: $/dev/config.sh
       shell: bash
