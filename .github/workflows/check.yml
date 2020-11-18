@@ -13,15 +13,11 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Setup node12
-      uses: actions/setup-node@v1
-      with:
-        node-version: '12'
     - name: Install Serverless-Devs
-      run: npm install -g @serverless-devs/s
+      run: sudo npm install -g @serverless-devs/s
       shell: bash
     - name: Run config.sh
-      run: bash ./dev/config.sh
+      run: sudo bash ./dev/config.sh
       env:
         INPUT_ACCOUNT_ID: ${{ secrets.ALIYUN_ACCOUNT_ID }}
         INPUT_ACCESS_KEY_ID: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}

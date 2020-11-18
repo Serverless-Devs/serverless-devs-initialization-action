@@ -1,20 +1,43 @@
-name: 'Aliyun Serverless Initialization Github Actions'
-description: 'Install Aliyun Serverless tool and configure the credentials'
+name: 'Serverless-Devs Initialization Github Actions'
+description: 'Install Serverless-Devs tool and configure the credentials'
 
 inputs:
   provider:
     description: 'The cloud service provider. [alibaba/aws/azure/baidu/google/huawei/tencent]'
-    required: false
-    default: "alibaba"
-  access_key_id:
-    description: 'Configure the access_key_id'
-    required: true
-  access_key_secret:
-    description: 'Configure the access_key_secret'
     required: true
   account_id:
     description: 'Configure the account_id'
-    required: true
+    required: false
+  access_key_id:
+    description: 'Configure the access_key_id'
+    required: false
+  access_key_secret:
+    description: 'Configure the access_key_secret'
+    required: false
+  secret_id:
+    description: 'Configure the secret_id'
+    required: false
+  secret_key:
+    description: 'Configure the secret_key'
+    required: false
+  secret_access_key:
+    description: 'Configure the secret_access_key'
+    required: false
+  key_vault_name:
+    description: 'Configure the key_vault_name'
+    required: false
+  tenant_id:
+    description: 'Configure the tenant_id'
+    required: false
+  client_id:
+    description: 'Configure the client_id'
+    required: false
+  client_secret:
+    description: 'Configure the client_secret'
+    required: false
+  private_key_data:
+    description: 'Configure the private_key_data'
+    required: false
 
 branding:
   icon: 'cloud-lightning'
@@ -24,8 +47,21 @@ runs:
   using: "composite"
   steps:
     - name: Install Serverless-Devs
-      run: npm install -g @serverless-devs/s
+      run: sudo npm install -g @serverless-devs/s
       shell: bash
     - name: Configure Serverless-Devs
-      run: $/dev/config.sh
+      run: ${{ github.action_path }}/dev/config.sh
       shell: bash
+      env:
+        INPUT_PROVIDER: ${{ inputs.provider }}
+        INPUT_ACCOUNT_ID: ${{ inputs.account_id }}
+        INPUT_ACCESS_KEY_ID: ${{ inputs.access_key_id }}
+        INPUT_ACCESS_KEY_SECRET: ${{ inputs.access_key_secret }}
+        INPUT_SECRET_ID: ${{ inputs.secret_id }}
+        INPUT_SECRET_KEY: ${{ inputs.secret_key }}
+        INPUT_SECRET_ACCESS_KEY: ${{ inputs.secret_access_key }}
+        INPUT_KEY_VAULT_NAME: ${{ inputs.key_vault_name }}
+        INPUT_TENANT_ID: ${{ inputs.tenant_id }}
+        INPUT_CLIENT_ID: ${{ inputs.client_id }}
+        INPUT_CLIENT_SECRET: ${{ inputs.client_secret }}
+        INPUT_PRIVATE_KEY_DATA: ${{ inputs.private_key_data }}
