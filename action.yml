@@ -1,0 +1,31 @@
+name: 'Aliyun Serverless Initialization Github Actions'
+description: 'Install Aliyun Serverless tool and configure the credentials'
+
+inputs:
+  provider:
+    description: 'The cloud service provider. [alibaba/aws/azure/baidu/google/huawei/tencent]'
+    required: false
+    default: "alibaba"
+  access_key_id:
+    description: 'Configure the access_key_id'
+    required: true
+  access_key_secret:
+    description: 'Configure the access_key_secret'
+    required: true
+  account_id:
+    description: 'Configure the account_id'
+    required: true
+
+branding:
+  icon: 'cloud-lightning'
+  color: 'blue'
+
+runs:
+  using: "composite"
+  steps:
+    - name: Install Serverless-Devs
+      run: npm install -g @serverless-devs/s
+      shell: bash
+    - name: Configure Serverless-Devs
+      run: $/dev/config.sh
+      shell: bash
