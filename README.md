@@ -33,7 +33,7 @@ The input credentials of the action are different for different cloud platform. 
 
 ```yaml
     - name: Initializing Serverless-Devs
-      uses: git-qfzhang/Serverless-Initialization-Actinos@main
+      uses: git-qfzhang/Serverless-Devs-Initialization-Action@main
       with:
         provider: alibaba
         account_id: ${{ secrets.ALIYUN_ACCOUNT_ID }}
