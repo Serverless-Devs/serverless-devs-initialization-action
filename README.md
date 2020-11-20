@@ -1,4 +1,4 @@
-![GitHub Actions status](https://github.com/git-qfzhang/Serverless-Devs-Initialization-Actinos/workflows/ci/badge.svg)
+![GitHub Actions status](https://github.com/git-qfzhang/Serverless-Devs-Initialization-Actinos/workflows/Check/badge.svg)
 [![License](https://img.shields.io/github/license/git-qfzhang/Serverless-Devs-Initialization-Actinos.svg)](https://github.com/git-qfzhang/Serverless-Devs-Initialization-Actinos/blob/master/LICENSE)
 
 # Serverless-Devs Initialization Action For Github Actions
