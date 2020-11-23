@@ -13,13 +13,14 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Install Serverless-Devs
-      run: sudo npm install -g @serverless-devs/s
-      shell: bash
-    - name: Run config.sh
-      run: sudo bash ./dev/config.sh
-      env:
-        INPUT_ACCOUNT_ID: ${{ secrets.ALIYUN_ACCOUNT_ID }}
-        INPUT_ACCESS_KEY_ID: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
-        INPUT_ACCESS_KEY_SECRET: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
-        INPUT_PROVIDER: alibaba
+    - name: Initializing Serverless-Devs with alibaba
+      uses: ./
+      with: 
+        provider: alibaba
+        account_id: ${{ secrets.ALIYUN_ACCOUNT_ID }}
+        access_key_id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+        access_key_secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+    - name: Check version and configuration
+      run: |
+        sudo s --version
+        sudo s config get -l
