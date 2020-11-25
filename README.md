@@ -1,5 +1,5 @@
-![GitHub Actions status](https://github.com/git-qfzhang/Serverless-Devs-Initialization-Actinos/workflows/Check/badge.svg)
-[![License](https://img.shields.io/github/license/git-qfzhang/Serverless-Devs-Initialization-Actinos.svg)](https://github.com/git-qfzhang/Serverless-Devs-Initialization-Actinos/blob/master/LICENSE)
+![GitHub Actions status](https://github.com/git-qfzhang/Serverless-Devs-Initialization-Actions/workflows/Check/badge.svg)
+[![License](https://img.shields.io/github/license/git-qfzhang/Serverless-Devs-Initialization-Actions.svg)](https://github.com/git-qfzhang/Serverless-Devs-Initialization-Actions/blob/master/LICENSE)
 
 # Serverless-Devs Initialization Action For Github Actions
 
@@ -50,7 +50,7 @@ The input credentials of the action are different for different cloud platform. 
 
 See [action.yml](action.yml) for the full documentation for this action's inputs.
 
-The application of Serverless-Devs Initialization Actinos can refer to [Serverless CI/CD](https://github.com/git-qfzhang/Serverless-CI-CD/tree/dev/src)
+The application of Serverless-Devs Initialization Actions can refer to [Serverless CI/CD](https://github.com/git-qfzhang/Serverless-CI-CD/tree/dev/src)
 
 ## Credentials
 
