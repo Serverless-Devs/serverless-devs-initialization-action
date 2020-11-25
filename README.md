@@ -3,17 +3,24 @@
 
 # Serverless-Devs Initialization Action For Github Actions
 
-Install [Serverless-Devs](https://github.com/Serverless-Devs/Serverless-Devs) tool and configure its credentials for use in other Github Actions. The credentials should be input to the action.
+Install [Serverless-Devs](https://github.com/Serverless-Devs/Serverless-Devs) tool and configure its credentials for use in other Github Actions.
 
 **Table of Contents**
 
 <!-- toc -->
 
+- [Prerequisites](#prerequisites)
 - [Usage](#usage)
 - [Credentials](#credentials)
 - [License Summary](#license-summary)
 
 <!-- tocstop -->
+
+## Prerequisites
+
+You should be familiar with Serverless-Devs tool. For more information, see:
+
+* "[Serverless-Devs](https://github.com/Serverless-Devs/Serverless-Devs)"
 
 ## Usage
 
@@ -43,7 +50,7 @@ The input credentials of the action are different for different cloud platform. 
 
 See [action.yml](action.yml) for the full documentation for this action's inputs.
 
-The application scenario of Serverless-Devs Initialization Actinos can refer to [Serverless CI/CD](https://github.com/git-qfzhang/Serverless-CI-CD/tree/dev/src)
+The application of Serverless-Devs Initialization Actinos can refer to [Serverless CI/CD](https://github.com/git-qfzhang/Serverless-CI-CD/tree/dev/src)
 
 ## Credentials
 
