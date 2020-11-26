@@ -17,9 +17,9 @@ jobs:
       uses: ./
       with: 
         provider: alibaba
-        account_id: ${{ secrets.ALIYUN_ACCOUNT_ID }}
-        access_key_id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
-        access_key_secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+        AccountID: ${{ secrets.ALIYUN_ACCOUNT_ID }}
+        AccessKeyID: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+        AccessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
     - name: Check version and configuration
       run: |
         sudo s --version
