@@ -43,9 +43,9 @@ The input credentials of the action are different for different cloud platform. 
       uses: git-qfzhang/Serverless-Devs-Initialization-Action@main
       with:
         provider: alibaba
-        account_id: ${{ secrets.ALIYUN_ACCOUNT_ID }}
-        access_key_id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
-        access_key_secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+        AccountID: ${{ secrets.ALIYUN_ACCOUNT_ID }}
+        AccessKeyID: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+        AccessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
 ```
 
 See [action.yml](action.yml) for the full documentation for this action's inputs.
@@ -54,7 +54,7 @@ The application of Serverless-Devs Initialization Actions can refer to [Serverle
 
 ## Credentials
 
-Do not store credentials in your repository's code.  You may use [GitHub Actions secrets](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets) to store credentials and redact credentials from GitHub Actions workflow logs.
+Do not store credentials in your repository's code. You may use [GitHub Actions secrets](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets) to store credentials and redact credentials from GitHub Actions workflow logs.
 
 ## License Summary
 
