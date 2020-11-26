@@ -1,5 +1,5 @@
-![GitHub Actions status](https://github.com/git-qfzhang/Serverless-Devs-Initialization-Actions/workflows/Check/badge.svg)
-[![License](https://img.shields.io/github/license/git-qfzhang/Serverless-Devs-Initialization-Actions.svg)](https://github.com/git-qfzhang/Serverless-Devs-Initialization-Actions/blob/master/LICENSE)
+![GitHub Actions status](https://github.com/Serverless-Devs/serverless-devs-initialization-action/workflows/Check/badge.svg)
+[![License](https://img.shields.io/github/license/Serverless-Devs/serverless-devs-initialization-action.svg)](https://github.com/Serverless-Devs/serverless-devs-initialization-action/blob/master/LICENSE)
 
 # Serverless-Devs Initialization Action For Github Actions
 
