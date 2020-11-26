@@ -50,7 +50,7 @@ The input credentials of the action are different for different cloud platform. 
 
 See [action.yml](action.yml) for the full documentation for this action's inputs.
 
-The application of Serverless-Devs Initialization Actions can refer to [Serverless CI/CD](https://github.com/git-qfzhang/Serverless-CI-CD/tree/dev/src)
+The application of Serverless-Devs Initialization Actions can refer to [Serverless CI/CD](https://github.com/git-qfzhang/serverless-cicd)
 
 ## Credentials
 
