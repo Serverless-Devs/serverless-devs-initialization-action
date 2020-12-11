@@ -1,7 +1,7 @@
 ![GitHub Actions status](https://github.com/Serverless-Devs/serverless-devs-initialization-action/workflows/Check/badge.svg)
 [![License](https://img.shields.io/github/license/Serverless-Devs/serverless-devs-initialization-action.svg)](https://github.com/Serverless-Devs/serverless-devs-initialization-action/blob/master/LICENSE)
 
-# Serverless-Devs Initialization Action For Github Actions
+# Serverless-Devs Action For Github Actions
 
 Install [Serverless-Devs](https://github.com/Serverless-Devs/Serverless-Devs) tool and configure its credentials for use in other Github Actions.
 
