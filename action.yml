@@ -2,6 +2,9 @@ name: 'Serverless-Devs Initialization Github Actions'
 description: 'Install Serverless-Devs tool and configure the credentials'
 
 inputs:
+  access:
+    description: 'Key pair alias, if the alias is not set, use default instead'
+    required: false
   AccountID:
     description: 'Configure the AccountID'
     required: false
@@ -50,6 +53,7 @@ runs:
       run: ${{ github.action_path }}/dev/config.sh
       shell: bash
       env:
+        INPUT_ACCESS: ${{ inputs.access }}
         INPUT_ACCOUNT_ID: ${{ inputs.AccountID }}
         INPUT_ACCESS_KEY_ID: ${{ inputs.AccessKeyID }}
         INPUT_ACCESS_KEY_SECRET: ${{ inputs.AccessKeySecret }}

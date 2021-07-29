@@ -16,6 +16,7 @@ jobs:
     - name: Initializing Serverless-Devs with alibaba
       uses: ./
       with: 
+        access: test
         AccountID: ${{ secrets.ALIYUN_ACCOUNT_ID }}
         AccessKeyID: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
         AccessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
