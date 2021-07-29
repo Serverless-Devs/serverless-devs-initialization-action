@@ -2,9 +2,6 @@ name: 'Serverless-Devs Initialization Github Actions'
 description: 'Install Serverless-Devs tool and configure the credentials'
 
 inputs:
-  provider:
-    description: 'The cloud service provider. [alibaba/aws/azure/baidu/google/huawei/tencent]'
-    required: true
   AccountID:
     description: 'Configure the AccountID'
     required: false
@@ -53,7 +50,6 @@ runs:
       run: ${{ github.action_path }}/dev/config.sh
       shell: bash
       env:
-        INPUT_PROVIDER: ${{ inputs.provider }}
         INPUT_ACCOUNT_ID: ${{ inputs.AccountID }}
         INPUT_ACCESS_KEY_ID: ${{ inputs.AccessKeyID }}
         INPUT_ACCESS_KEY_SECRET: ${{ inputs.AccessKeySecret }}
