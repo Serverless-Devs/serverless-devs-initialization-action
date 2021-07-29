@@ -47,7 +47,7 @@ runs:
   using: "composite"
   steps:
     - name: Install Serverless-Devs
-      run: sudo npm install -g @serverless-devs/s
+      run:  npm install -g @serverless-devs/s
       shell: bash
     - name: Configure Serverless-Devs
       run: ${{ github.action_path }}/dev/config.sh
